@@ -7,12 +7,14 @@ import android.os.Bundle;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 
 import com.amador.mypersonalwords.R;
 
 public class SplashScreen extends AppCompatActivity {
 
     private static final int SPLASH_DURATION_MS = 3000;
+    private RelativeLayout conten;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,10 +25,15 @@ public class SplashScreen extends AppCompatActivity {
         //Animation that moves the logo from the top to the center
         Animation animation = AnimationUtils.loadAnimation(SplashScreen.this, R.anim.splash_logo_move);
 
+
         ImageView imgLogo = (ImageView) findViewById(R.id.imvLogo);
+
+
         if (imgLogo != null) {
             imgLogo.setAnimation(animation);
         }
+
+
 
         /**
          * The object waits X milliseconds before starting the other Activity
@@ -36,6 +43,7 @@ public class SplashScreen extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
+
                 startActivity(new Intent(SplashScreen.this, LoginActivity.class));
                 finish();
             }

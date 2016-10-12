@@ -2,8 +2,12 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#FFC107</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#FFF</color>
     <color name="backActivityColor">#FFECB3</color>
     <color name="letterBackActivityColor">#000</color>
     <color name="letterWhrite">#FFF</color>
+    <color name="letterRed">#FC0606</color>
+
+    <color name="black_overlay">#66000000</color>
+
 </resources>

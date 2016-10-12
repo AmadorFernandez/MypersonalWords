@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">My personal words</string>
+    <string name="hind_user">Usuario</string>
+    <string name="hind_pwd">Contraseña</string>
+    <string name="text_btn_login">Conectar</string>
+    <string name="text_remember_credentials">Recordar credenciales</string>
+    <string name="text_btn_register">Registrarse</string>
+    <string name="text_btn_create_acount">Crear cuenta</string>
+
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="hind_pwd_repeat">Repetir contraseña</string>
 </resources>
