@@ -15,7 +15,7 @@ import com.amador.mypersonalwords.R;
 public class LoginActivity extends AppCompatActivity {
 
     RelativeLayout contain;
-    Button btnRegister;
+    Button btnRegister, btnLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +28,8 @@ public class LoginActivity extends AppCompatActivity {
     void init(){
 
         btnRegister = (Button)findViewById(R.id.btnCreateAcount);
+        btnLogin = (Button)findViewById(R.id.btnLogin);
+
         startAnimation();
 
         btnRegister.setOnClickListener(new View.OnClickListener() {
@@ -37,6 +39,15 @@ public class LoginActivity extends AppCompatActivity {
                 Intent i = new Intent(LoginActivity.this, RegisterActivity.class);
                 startActivity(i);
 
+            }
+        });
+
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent i = new Intent(LoginActivity.this, SelectionActivity.class);
+                startActivity(i);
             }
         });
 

@@ -11,4 +11,10 @@
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="hind_pwd_repeat">Repetir contraseña</string>
+    <string name="action_settings">Preferencias</string>
+    <string name="action_about">Cerrar sesión</string>
+    <string name="action_search">Buscar</string>
+    <string name="action_nuevo">Nuevo diccionario</string>
+    <string name="action_searchs">Buscar diccionario</string>
+    <string name="action_add">Añadir Diccionario</string>
 </resources>

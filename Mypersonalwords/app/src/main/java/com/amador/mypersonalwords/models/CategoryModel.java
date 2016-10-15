@@ -57,8 +57,8 @@ public class CategoryModel {
     }
 
     //Const
-    private static final int LENGTH_DEFINITION = 100;
-    private static final int LENGTH_CATEGORY_NAME = 20;
+    public static final int MAX_LENGTH_DEFINITION = 100;
+    public static final int MAX_LENGTH_CATEGORY_NAME = 20;
 
     //Construct
     public CategoryModel(String categotyName, String categotyDefinition, int id) {
@@ -76,12 +76,12 @@ public class CategoryModel {
     //Class methods
     public static boolean validateLengthDefinition(String categotyDefinition){
 
-        return  categotyDefinition.length() <= LENGTH_DEFINITION;
+        return  categotyDefinition.length() <= MAX_LENGTH_DEFINITION;
     }
 
     public static boolean validateLengthCategoryName(String categoryName){
 
-        return categoryName.length() <= LENGTH_CATEGORY_NAME;
+        return categoryName.length() <= MAX_LENGTH_CATEGORY_NAME;
     }
 
 

@@ -1,5 +1,7 @@
 package com.amador.mypersonalwords.models;
 
+import java.util.ArrayList;
+
 /**
  * Created by amador on 12/10/16.
  */
@@ -11,6 +13,7 @@ public class DictionaryModel {
     private String title;
     private UserModel author;
     private CategoryModel category;
+    private ArrayList<WordModel> dictionary;
 
     //Getter and setter
     public int getId() {
@@ -45,6 +48,14 @@ public class DictionaryModel {
         this.category = category;
     }
 
+    public ArrayList<WordModel> getDictionary() {
+        return dictionary;
+    }
+
+    public void setDictionary(ArrayList<WordModel> dictionary) {
+        this.dictionary = dictionary;
+    }
+
     //Const
 
     private static final int MAX_TITLE_LENGTH = 50;
@@ -54,6 +65,7 @@ public class DictionaryModel {
         this.title = title;
         this.author = author;
         this.category = category;
+        this.dictionary = new ArrayList<WordModel>();
     }
 
     public DictionaryModel(int id, String title, UserModel author, CategoryModel category) {
@@ -61,6 +73,7 @@ public class DictionaryModel {
         this.title = title;
         this.author = author;
         this.category = category;
+        this.dictionary = new ArrayList<WordModel>();
     }
 
     //Class methods
