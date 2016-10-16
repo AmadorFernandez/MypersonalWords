@@ -14,7 +14,32 @@
     <string name="action_settings">Preferencias</string>
     <string name="action_about">Cerrar sesión</string>
     <string name="action_search">Buscar</string>
-    <string name="action_nuevo">Nuevo diccionario</string>
+    <string name="action_nuevo">Nuevo Diccionario</string>
     <string name="action_searchs">Buscar diccionario</string>
     <string name="action_add">Añadir Diccionario</string>
+
+    <string-array name="list_filter">
+
+        <item>Mi biblioteca</item>
+        <item>Biblio Web</item>
+        <item>Mis Alertas</item>
+
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hind_name_dic">Nombre</string>
+    <string name="create_dic">Administracion de diccionarios</string>
+    <string name="text_empty">El campo no puede ser vacio</string>
+    <string name="dictionary_exists">Ya hay un diccionario con ese nombre</string>
+    <string name="inten_text_name_dic">Título: </string>
+    <string name="inten_text_author_dic">Autor: </string>
+    <string name="inten_text_words_dic">Palabras: </string>
+    <string name="text_alert">Atención</string>
+    <string name="text_ms_delete_dic">Esta seguro de que desa borrar el diccionario</string>
+    <string name="text_acept">Aceptar</string>
+    <string name="text_cancel">Cancelar</string>
+    <string name="rename_title">Renombrar diccionario</string>
+    <string name="new_title">Introcuzca el nuevo nombre</string>
+    <string name="add_title">Introduzca el título</string>
 </resources>

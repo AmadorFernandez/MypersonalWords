@@ -3,4 +3,10 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="top_img_login">35dp</dimen>
+    <dimen name="activity_filter_text">50dp</dimen>
+    <dimen name="bnt_top">10dp</dimen>
+    <dimen name="bnt_separation">25dp</dimen>
+    <dimen name="floatin_margin">20dp</dimen>
+    <dimen name="text_dictionary_size">15dp</dimen>
+    <dimen name="inten_heigth_dictionary">25dp</dimen>
 </resources>

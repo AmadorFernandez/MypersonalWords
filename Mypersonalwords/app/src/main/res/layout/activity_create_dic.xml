@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_create_dic"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.amador.mypersonalwords.views.CreateDicActivity"
+    android:background="@color/backActivityColor"
+    >
+
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tinNameDic"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        app:errorTextAppearance="@color/letterRed"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="@color/letterBackActivityColor"
+
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hind_name_dic"
+            android:id="@+id/edtDicName"
+            android:textStyle="bold"
+            android:textColor="@color/letterBackActivityColor"
+
+            />
+
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tinNameDic"
+        android:layout_centerHorizontal="true"
+        >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imbCancel"
+            android:src="@mipmap/ic_cancel"
+            android:background="@color/backActivityColor"
+            android:layout_marginTop="@dimen/bnt_top"
+            android:layout_marginRight="@dimen/bnt_separation"
+
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imbCreateDic"
+            android:src="@mipmap/ic_create_dic"
+            android:layout_toRightOf="@+id/imbCancel"
+            android:background="@color/backActivityColor"
+            android:layout_marginTop="@dimen/bnt_top"
+            android:layout_marginLeft="@dimen/bnt_separation"
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

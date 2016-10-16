@@ -12,7 +12,6 @@ public class DictionaryModel {
     private int id;
     private String title;
     private UserModel author;
-    private CategoryModel category;
     private ArrayList<WordModel> dictionary;
 
     //Getter and setter
@@ -40,14 +39,6 @@ public class DictionaryModel {
         this.author = author;
     }
 
-    public CategoryModel getCategory() {
-        return category;
-    }
-
-    public void setCategory(CategoryModel category) {
-        this.category = category;
-    }
-
     public ArrayList<WordModel> getDictionary() {
         return dictionary;
     }
@@ -59,20 +50,34 @@ public class DictionaryModel {
     //Const
 
     private static final int MAX_TITLE_LENGTH = 50;
+    public static final String EXTENCION_DIC = ".xml";
 
     //Construct
-    public DictionaryModel(String title, UserModel author, CategoryModel category) {
+    public DictionaryModel(String title, UserModel author) {
         this.title = title;
         this.author = author;
-        this.category = category;
         this.dictionary = new ArrayList<WordModel>();
     }
 
-    public DictionaryModel(int id, String title, UserModel author, CategoryModel category) {
+    public DictionaryModel(int id, String title, UserModel author) {
         this.id = id;
         this.title = title;
         this.author = author;
-        this.category = category;
+        this.dictionary = new ArrayList<WordModel>();
+    }
+
+    public DictionaryModel(UserModel author){
+
+        this.title = "";
+        this.dictionary = new ArrayList<WordModel>();
+        this.author = author;
+
+    }
+
+    public DictionaryModel(String title){
+
+        this.title = title;
+        this.author = new UserModel("Desconocido");
         this.dictionary = new ArrayList<WordModel>();
     }
 

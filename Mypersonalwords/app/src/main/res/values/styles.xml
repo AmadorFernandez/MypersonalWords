@@ -36,5 +36,11 @@
         <item name="android:background">@color/black_overlay</item>
     </style>
 
+    <style name="AlertDialogCompat" parent="Theme.AppCompat.Dialog.MinWidth">
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/letterBackActivityColor</item>
+    </style>
+
 
 </resources>

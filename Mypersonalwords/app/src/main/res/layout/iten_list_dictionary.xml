@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/iten_list_dictioray_info"
+    android:background="@color/backActivityColor"
+    android:paddingLeft="@dimen/bnt_top"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    >
+
+    <TextView
+        android:id="@+id/txvNameDictList"
+        android:text="@string/inten_text_name_dic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/inten_heigth_dictionary"
+        android:textStyle="bold"
+        android:background="@color/backActivityColor"
+        android:textSize="@dimen/text_dictionary_size"
+        android:gravity="center_vertical"
+        android:textColor="@color/letterBackActivityColor"
+        android:layout_marginTop="@dimen/bnt_top"
+        />
+
+    <TextView
+        android:id="@+id/txvAutorDictList"
+        android:text="@string/inten_text_author_dic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/inten_heigth_dictionary"
+        android:textStyle="bold"
+        android:background="@color/backActivityColor"
+        android:textSize="@dimen/text_dictionary_size"
+        android:gravity="center_vertical"
+        android:textColor="@color/letterBackActivityColor"
+        android:layout_marginTop="@dimen/bnt_top"
+        android:layout_below="@+id/txvNameDictList"
+        />
+
+    <TextView
+        android:id="@+id/txvNumeberWordsDictList"
+        android:text="@string/inten_text_words_dic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/inten_heigth_dictionary"
+        android:textStyle="bold"
+        android:background="@color/backActivityColor"
+        android:textSize="@dimen/text_dictionary_size"
+        android:gravity="center_vertical"
+        android:textColor="@color/letterBackActivityColor"
+        android:layout_marginTop="@dimen/bnt_top"
+        android:layout_below="@+id/txvAutorDictList"
+        />
+
+
+    <ImageButton
+        android:id="@+id/imbSeeDictionary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_see"
+        android:background="@color/backActivityColor"
+        android:layout_alignParentRight="true"
+        />
+
+    <ImageButton
+        android:id="@+id/editDictionary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_edit"
+        android:background="@color/backActivityColor"
+        android:layout_toLeftOf="@+id/imbSeeDictionary"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/backActivityColor"
+        android:id="@+id/imbDeleteDic"
+        android:layout_toLeftOf="@+id/editDictionary"
+        android:src="@mipmap/ic_delete"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/letterBackActivityColor"
+        android:layout_below="@+id/txvNumeberWordsDictList"
+        >
+
+    </View>
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

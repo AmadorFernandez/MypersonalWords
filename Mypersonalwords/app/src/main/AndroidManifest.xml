@@ -13,10 +13,9 @@
             android:screenOrientation="portrait"
             android:theme="@style/SplashScreen">
             <intent-filter>
-
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
@@ -26,12 +25,14 @@
         <activity
             android:name=".views.RegisterActivity"
             android:theme="@style/Login" />
-        <activity android:name=".views.SelectionActivity"
-            android:theme="@style/Login"
-            >
+        <activity
+            android:name=".views.SelectionActivity"
+            android:theme="@style/Login"></activity>
+        <activity android:name=".views.CreateDicActivity"
+            android:theme="@style/AlertDialogCompat"
+            android:label="@string/create_dic"
 
-
-        </activity>
+            ></activity>
     </application>
 
 </manifest>

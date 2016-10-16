@@ -19,10 +19,35 @@
         app:titleTextColor="@color/letterWhrite"
         app:titleTextAppearance="@color/letterWhrite"
 
-
         >
-
     </android.support.v7.widget.Toolbar>
+
+
+
+    <ListView
+        android:id="@+id/listDictionary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolBarSelection"
+        ></ListView>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatBtnLaunchCreateDic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_create_dic"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:fabSize="normal"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/floatin_margin"
+        android:layout_marginBottom="@dimen/floatin_margin"
+        />
+
+
+
+
 
 
 

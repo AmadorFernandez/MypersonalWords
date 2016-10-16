@@ -69,6 +69,11 @@ public class UserModel {
         setUserPass(userPass);
     }
 
+    public UserModel(String userName){
+
+        this.userName = userName;
+    }
+
     public UserModel(int id, String userName, String userPass) {
         this.id = id;
         this.userName = userName;
